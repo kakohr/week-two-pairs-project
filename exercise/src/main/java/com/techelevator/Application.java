@@ -1,11 +1,22 @@
 package com.techelevator;
 
+import javax.print.attribute.standard.MediaSize;
+import java.util.ArrayList;
+import java.util.List;
+
 public class Application {
+
+    //we need three list here, employee departments and projects.
+
+    List<Department>Departments = new ArrayList<Department>();
+    List<Employee>Employees = new ArrayList<Employee>();
+    List<Project>Projects = new ArrayList<Project>();
 
     /**
      * The main entry point in the application
      * @param args
      */
+
     public static void main(String[] args) {
         Application app = new Application();
         app.run();
@@ -26,8 +37,9 @@ public class Application {
         // print all employees
         printEmployees();
 
-        // create the TEams project
+        // create the Teams project
         createTeamsProject();
+
         // create the Marketing Landing Page Project
         createLandingPageProject();
 
@@ -65,7 +77,7 @@ public class Application {
     }
 
     /**
-     * Create the 'TEams' project.
+     * Create the 'Teams' project.
      */
     private void createTeamsProject() {
 

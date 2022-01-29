@@ -1,12 +1,20 @@
 # Week 2 review - TEams (Project Management Software)
 
-You’ve been tasked with building an internal project management system for teams to track their projects. You don’t need to build a UI for this application. Your job is to build the foundational classes that drive the application’s features.
+You’ve been tasked with building an internal project 
+management system for teams to track their projects. 
+You don’t need to build a UI for this application. 
+Your job is to build the foundational classes that drive 
+the application’s features.
 
 ## Classes
 
-The core of this application consists of three classes, which you'll create in the main package `com.techelevator`. Make sure to read through the requirements for each class before writing any code.
+The core of this application consists of three classes, 
+which you'll create in the main package `com.techelevator`.
+Make sure to read through the requirements for each class 
+before writing any code.
 
-> Note: All dates in this application are strings using the format mm/dd/yyyy.
+> Note: All dates in this application are strings using 
+> the format mm/dd/yyyy.
 
 ### Step One: Create the `Department` class
 
@@ -41,28 +49,39 @@ Create a new class called `Employee.java` with the following requirements.
 
 #### Static constants
 
-The default starting salary for all employees is $60,000 and is stored in a static constant variable of type `double`.
+The default starting salary for all employees is $60,000 
+and is stored in a static constant variable of type `double`.
 
 #### Constructors
 
 `Employee` needs two constructors.
 
-The first one accepts all the arguments needed to create a new `Employee`: `employeeID`, `firstName`, `lastName`, `email`, `department`, and `hireDate`.
+The first one accepts all the arguments needed to create 
+a new `Employee`: `employeeID`, `firstName`, `lastName`, 
+`email`, `department`, and `hireDate`.
 
-> Note: The first constructor doesn't include a `double` argument for the salary. Make sure to initialize each employees' salary to the static constant you created.
+> Note: The first constructor doesn't include a `double` 
+> argument for the salary. Make sure to initialize each 
+> employees' salary to the static constant you created.
 
-The second constructor is a no-argument constructor. This constructor allows you to create your `Employee` objects in multiple ways.
+The second constructor is a no-argument constructor. 
+This constructor allows you to create your `Employee` 
+objects in multiple ways.
 
 #### Methods
 
 | Method Name | Description |
 | ----------- | ----------- |
-| `getFullName()`| A derived property that returns the employee's full name in the following format: "Last, First"|
-| `raiseSalary(double percent)` | A method that raises the employee's salary by x percent |
+| `getFullName()`| A derived property that returns the 
+employee's full name in the following format: "Last, 
+First"|
+| `raiseSalary(double percent)` | A method that raises 
+the employee's salary by x percent |
 
 ### Step Three: Create the `Project` class
 
-Create a new class called `Project.java` with the following requirements.
+Create a new class called `Project.java` with the
+following requirements.
 
 #### Instance variables
 
