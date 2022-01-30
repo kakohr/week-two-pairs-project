@@ -9,7 +9,7 @@ public class Employee {
     private Department department;
     private String hireDate;
 
-    String getFullName;
+
 
     private static final double STARTING_SALARY = (60000);
 
@@ -62,8 +62,8 @@ public class Employee {
     }
 
 
-    public Department getDepartment() {
-        return department;
+    public String getDepartment() {
+        return (department.getName());
     }
     public void setDepartment(Department department) {
         this.department = department;
@@ -78,16 +78,17 @@ public class Employee {
     }
 
 
-    public String getFullName(String lastName, String firstName) {
-        return getFullName = (lastName + ", " + firstName);
-    }
-    public void setGetFullName(String getFullName) {
-        this.getFullName = getFullName;
+    public String getFullName() {
+        return (lastName + ", " + firstName);
     }
 
 
-    public double raiseSalary(double percent){
-        return ((percent / 100) * salary) + salary;
+
+    public double getSalary() {
+         return salary;
+    }
+    public void raiseSalary(double percent) {
+       this.salary = ((percent / 100) * salary) + salary;
     }
 }
 
