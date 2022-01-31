@@ -11,7 +11,7 @@ public class Employee {
 
 
 
-    private static final double STARTING_SALARY = (60000);
+    private static final double STARTING_SALARY = (60000.00);
 
      public Employee(long employeeId, String firstName, String lastName,
                     String email, Department department, String hireDate) {

@@ -58,6 +58,10 @@ public class Project {
     public void setTeamMembers(List<Employee> list) {
         this.teamMembers = list;
     }
+
+    public void addTeamMember(Employee employee) {
+        this.teamMembers.add(employee);
+    }
 }
 
 

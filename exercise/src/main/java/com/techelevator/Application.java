@@ -1,6 +1,7 @@
 package com.techelevator;
 
 import javax.print.attribute.standard.MediaSize;
+import javax.security.auth.login.AccountNotFoundException;
 import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -46,16 +47,18 @@ public class Application {
         createEmployees();
 
         Employee Dean = new Employee();
-            Dean.setDepartment(Engineering);
-            Dean.setEmail("djohnson@teams.com");
-            Dean.setEmployeeId(1);
-            Dean.setFirstName("Dean");
-            Dean.setLastName("Johnson");
-            Dean.setHireDate("08/21/2020");
+           Dean.setDepartment(Engineering);
+           Dean.setEmail("djohnson@teams.com");
+           Dean.setEmployeeId(1);
+           Dean.setFirstName("Dean");
+           Dean.setLastName("Johnson");
+           Dean.setHireDate("08/21/2020");
 
-        Employee Angie = new Employee(2, "Angie", "Smith", "asmith@teams.com",
+        Employee Angie = new Employee(2, "Angie",
+                "Smith", "asmith@teams.com",
                 Engineering, "08/21/2020");
-        Employee Margaret = new Employee(3, "Margaret", "Thompson",
+        Employee Margaret = new Employee(3,
+                "Margaret", "Thompson",
                 "mthompson@teams.com", Marketing, "08/21/2020" );
 
 
@@ -77,18 +80,34 @@ public class Application {
 
         // create the Teams project
         createTeamsProject();
+
         Map<String, Project> projects = new HashMap<String, Project>();
 
-        Project firstProject = new Project("TEams", "Project Management Software",
-                "10/10/2020", "11/10/20");
+        Project firstProject = new Project("TEams",
+                "Project Management Software","10/10/2020",
+                "11/10/20");
+
+       firstProject.addTeamMember(Angie);
+       firstProject.addTeamMember(Dean);
+
+       projects.put("TEams", firstProject);
 
         // create the Marketing Landing Page Project
         createLandingPageProject();
 
+        Project secondProject = new Project("Marketing Landing Page",
+                "Lead Capture Landing Page for Marketing",
+                "10/10/2020", "10/17/2020");
+
+        secondProject.addTeamMember(Margaret);
+
+        projects.put("Marketing Landing Page", secondProject);
 
         // print each project name and the total number of employees on the project
         printProjectsReport();
 
+        System.out.println(firstProject.getName() + ": " + "2");
+        System.out.println(secondProject.getName() + ": " + "1");
 
     }
 
