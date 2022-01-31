@@ -13,8 +13,8 @@ public class Project {
     public Project (String name, String description,
                     String startDate, String dueDate) {
         this.name = name;
-        this. description = description;
-        this. startDate = startDate;
+        this.description = description;
+        this.startDate = startDate;
         this.dueDate = dueDate;
         this.teamMembers = new ArrayList<>();
 
@@ -59,8 +59,7 @@ public class Project {
         this.teamMembers = list;
     }
 
-    public void addTeamMember(Employee employee) {
-        this.teamMembers.add(employee);
+    public void addTeamMember(Employee employee) {this.teamMembers.add(employee);
     }
 }
 

@@ -78,6 +78,7 @@ public class Application {
         System.out.println(Margaret.getFullName() + " (" +
                 Margaret.getSalary() + ") " + Margaret.getDepartment());
 
+
         // create the Teams project
         createTeamsProject();
 
@@ -106,8 +107,8 @@ public class Application {
         // print each project name and the total number of employees on the project
         printProjectsReport();
 
-        System.out.println(firstProject.getName() + ": " + "2");
-        System.out.println(secondProject.getName() + ": " + "1");
+        System.out.println(firstProject.getName() + ": " + firstProject.getTeamMembers().size());
+        System.out.println(secondProject.getName() + ": " + secondProject.getTeamMembers().size());
 
     }
 
