@@ -1,0 +1,5 @@
+I was able to run the application successfully and it generated the correct output.
+
+In looking at your code, it seems like you skipped over the step of putting code into the methods and
+just forced the output that was required. That made it look right, but why didn't you fill out methods 
+and do it properly? Did you have issues with time or the project or something else?
